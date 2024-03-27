@@ -92,13 +92,13 @@
 /* <!-- responsive main layout  --> */
 .sidebar {
   margin: 0;
-  padding: 20px 0; 
+  padding: 20px 0;
   width: 315px;
   background-color: #ffff;
   position: fixed;
   height: 90%;
-  overflow-y: auto; 
-  overflow-x: hidden;  
+  overflow-y: auto;
+  overflow-x: hidden;
   border-right: 0.05px solid #76c04329;
   transition: all 0.3s ease;
 }
@@ -109,6 +109,7 @@
   /* padding: 13px; */
   text-decoration: none;
 }
+
 /* 
 .sidebar a.active {
   background-color: var(--monster-primary);
@@ -116,16 +117,16 @@
 }
 
 .sidebar a:hover:not(.active) { */
-  /* background-color: #555; */
-  /* background-color: var(--monster-primary);
+/* background-color: #555; */
+/* background-color: var(--monster-primary);
   color: white;
 } */
 
-.list-values{
+.list-values {
   display: none;
 }
 
-.list-values .back-to-category{
+.list-values .back-to-category {
   padding: 13px 13px;
   width: 15rem;
   border-radius: 15px;
@@ -133,18 +134,20 @@
   transition: all .3s ease-in-out;
 }
 
-.list-values .back-to-category:hover{
+.list-values .back-to-category:hover {
   background: var(--tag-btn);
   color: 7F7F7F;
 }
-.list-values span{
+
+.list-values span {
   padding: 13px 13px;
   width: 15rem;
   border-radius: 15px;
   cursor: pointer;
   transition: all .3s ease-in-out;
 }
-.list-values span:hover{
+
+.list-values span:hover {
   background: var(--monster-primary-hover);
 }
 
@@ -159,10 +162,10 @@ div.content {
   /* Initially hide the toggle button */
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1260px) {
   .sidebar {
     width: 0;
-    /* Hide the sidebar by default */
+    /* Hide the sidebar */
   }
 
   .sidebar-toggle {
@@ -176,7 +179,7 @@ div.content {
   }
 
   .sidebar.active {
-    width: 200px;
+    width: 350px;
     /* Show the sidebar when active class is present */
   }
 
@@ -435,7 +438,8 @@ ul,
   margin: 0;
   padding: 0;
 }
-#category-list .label{
+
+#category-list .label {
   border: 1px solid var(--tag-btn);
   padding: 13px 13px;
   width: 16rem;
@@ -443,12 +447,13 @@ ul,
   cursor: pointer;
   transition: all .3s ease-in-out;
 }
-#category-list .label:hover{
+
+#category-list .label:hover {
   background: var(--monster-primary-hover);
   /* font-weight: bold; */
 }
 
-.tree-list-wrapper{
+.tree-list-wrapper {
   margin-top: 39px;
   margin-left: 20px;
 }
@@ -485,12 +490,236 @@ ul,
 .active {
   display: block;
   max-height: 1000px;
+  z-index: 9999;
 }
 
 /* Nested list style end */
 
-.head-line{
+.head-line {
   background: #000;
   color: #ffff;
 }
 
+.toggle-categories {
+  position: absolute;
+  left: 72px;
+  top: 30%;
+  cursor: pointer;
+  display: none;
+}
+
+/* ===================================================== 
+      Custom navbar CSS START
+   ===================================================== */
+
+
+.custom-navbar input[type="checkbox"],
+.custom-navbar .hamburger-lines {
+  display: none;
+}
+
+.custom-container {
+  /* max-width: 1200px; */
+  width: 90%;
+  margin: auto;
+}
+
+.custom-navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  z-index: 100;
+}
+
+.custom-navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.custom-navbar-sochial-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  /* order: 1; */
+  font-size: 2.3rem;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.custom-navbar a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.custom-navbar a:hover {
+  color: #76C043;
+}
+
+
+@media (max-width: 1260px) {
+  .toggle-categories {
+    display: block !important;
+  }
+
+  .margin-top-sm {
+    margin-top: 10px;
+  }
+
+  .nav-search-input {
+    width: 229px;
+  }
+
+  .nav-search-input:focus {
+    width: 229px !important;
+  }
+
+  .custom-navbar {
+    opacity: 1;
+  }
+
+  .custom-navbar-container input[type="checkbox"],
+  .custom-navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .custom-navbar-container {
+    display: block;
+    position: relative;
+    height: 90px;
+  }
+
+  .custom-navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .custom-navbar-container .hamburger-lines {
+    display: block;
+    height: 28px;
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .custom-navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #333;
+  }
+
+  .custom-navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .custom-navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .custom-navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .custom-navbar .menu-items .nav-item-custom {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: start !important;
+    align-items: start !important;
+    padding-left: 0rem;
+    margin-bottom: 0;
+  }
+
+  .custom-navbar .menu-items {
+    padding-top: 100px;
+    background: #fff;
+    height: 100vh;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column !important;
+    justify-content: start !important;
+    align-items: start !important;
+    margin-left: -61px;
+    padding-left: 40px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .custom-navbar .menu-items li {
+    margin-bottom: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2.5rem;
+  }
+
+  .custom-navbar-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+  }
+
+  .custom-navbar-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+
+  .custom-navbar-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .custom-navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+
+}
+
+@media (max-width: 500px) {
+  .custom-navbar-container input[type="checkbox"]:checked~.logo {
+    display: none;
+  }
+}
+
+/* ===================================================== 
+      Custom navbar CSS END
+   ===================================================== */

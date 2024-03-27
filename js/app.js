@@ -27,13 +27,6 @@ $(document).ready(function () {
     
 });
  
-$('.ads_sponsors').slick({
-  autoplay: true,
-  autoplaySpeed: 1000,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  arrows: true 
-});
 
 function toggleSidebar() {
     var sidebar = document.querySelector('.sidebar');

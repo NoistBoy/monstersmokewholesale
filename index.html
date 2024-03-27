@@ -26,7 +26,54 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-light shadow custom-nav sticky-top">
+  <!-- custom navbar start -->
+  <nav class="custom-navbar">
+    <div class="custom-navbar-container custom-container">
+      <input type="checkbox" name="" id="">
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <div class="toggle-categories" onclick="toggleSidebar();" >
+        <span><b>Categories</b></span>
+      </div>
+      <a class="logo" href="#">
+        <img src="./img/logo-monster.jpg" alt="logo" srcset="">
+      </a>
+
+      <div class="menu-items">
+        <ul class="nav-item-custom d-flex justify-content-center align-items-center mb-0">
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Limited Offers</a></li>
+          <li><a href="#">Discounted Products</a></li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <div class="container-input">
+            <input type="search" class="nav-search-input " placeholder="Search Products, Category, brand" name="text">
+            <span>
+              <i class="fa-solid fa-magnifying-glass fs-5"></i>
+            </span>
+          </div>
+        </form>
+        <ul class="  mb-2 mb-lg-0 fs-4 fw-bold margin-top-sm" style="display: flex;">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#"><i class="lni lni-phone"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#"><i class="lni lni-cart"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#"><i class="lni lni-user"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- custom navbar End -->
+  <!--  Bootstrap start Navbar -->
+  <!-- <nav class="navbar navbar-expand-lg bg-light shadow custom-nav sticky-top">
     <div class="container-fluid mx-4">
       <a class="navbar-brand" href="#">
         <img src="./img/logo-monster.jpg" alt="logo" srcset="">
@@ -80,11 +127,10 @@
         </ul>
       </div>
     </div>
-  </nav>
-
-  <!--  End Navbar -->
+  </nav> -->
+  <!--  Bootstrap End Navbar -->
   <!-- responsive main layout  -->
-  <div class="sidebar">
+  <div class="sidebar" style="margin-top: 90px;">
     <div class="row">
       <div class="col-12">
         <div class="tree-list-wrapper mt-5 d-flex justify-content-center flex-column">
@@ -750,496 +796,524 @@
             <img src="./img/Asset 1-8.png" alt="image" srcset="" class="w-100 img-fluid">
           </div>
           <div class="container">
-            <h2 class=" fw-bold fs-1 my-4" >Limited Time Offer</h2>
+            <h2 class=" fw-bold fs-1 my-4">Limited Time Offer</h2>
 
-                      <!-- owl-carousel start -->
-          <div class="owl-carousel owl-theme ">
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+            <!-- owl-carousel start -->
+            <div class="owl-carousel owl-theme ">
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
                 </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
                 </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+            <!-- owl-carousel END -->
+            <!-- owl carousel 2 -->
+            <div class="owl-carousel owl-theme ">
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
                 </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
                 </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
+                  </div>
+                  <div>
+                    <span class="d-block fw-bold">In Stock: 324</span>
+                    <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
+                    <button class="btn product-card-btn fw-bold">
+                      Login | Register
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- owl-carousel END -->
-          <!-- owl carousel 2 -->
-          <div class="owl-carousel owl-theme ">
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="product-card">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                  <span class="d-block new-arrival"><i class="lni lni-star-fill"></i> New Arrival</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="./img/P-1.png" alt="" srcset="" class="img-fluid w-75">
-                </div>
-                <div>
-                  <span class="d-block fw-bold">In Stock: 324</span>
-                  <p class="fs-5 text fw-bold">Escobar 6K Box Of 10</p>
-                  <button class="btn product-card-btn fw-bold">
-                    Login | Register
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- owl carousel 2 END -->
+            <!-- owl carousel 2 END -->
           </div>
         </div>
       </div>
 
       <div class="row py-3 mb-5 head-line">
-        <marquee behavior="" direction="" class="fw-bold fs-1" scrollamount="18" >
-          100% Authentic Products <span class="text-danger"> Free Shipping On All Prepaid Orders</span> Best Distributor For Smoke and Vape
+        <marquee behavior="" direction="" class="fw-bold fs-1" scrollamount="18">
+          100% Authentic Products <span class="text-danger"> Free Shipping On All Prepaid Orders</span> Best Distributor
+          For Smoke and Vape
         </marquee>
       </div>
 
-            <!-- Shop now section -->
-            <div class="row">
-              <div class="col-md-12 col-sm-12 px-0 pb-5">
-                <div class="container-fluid">
-                  <h2 class=" fw-bold fs-1" >Products Spotlight</h2>
-                  
-                  <div id="spot-light-carousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./img/spotlight.png" class="d-block w-100" alt="image">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./img/spotlight.png" class="d-block w-100" alt="image">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./img/spotlight.png" class="d-block w-100" alt="image">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#spot-light-carousel" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#spot-light-carousel" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
+      <!-- Shop now section -->
+      <div class="row">
+        <div class="col-md-12 col-sm-12 px-0 pb-5">
+          <div class="container-fluid">
+            <h2 class=" fw-bold fs-1">Products Spotlight</h2>
 
+            <div id="spot-light-carousel" class="carousel slide" data-bs-ride="carousel" style="z-index: -9;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/spotlight.png" class="d-block w-100" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/spotlight.png" class="d-block w-100" alt="image">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/spotlight.png" class="d-block w-100" alt="image">
                 </div>
               </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#spot-light-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#spot-light-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
 
-            <!-- Feauture Brands -->
-            <div class="row">
-              <div class="col-md-12 col-sm-12 px-0 pb-5">
-                <div class="container-fluid">
-                  <h2 class=" fw-bold fs-1 mb-3" >Featured Brands</h2>
+          </div>
+        </div>
+      </div>
 
-                  <div class="row">
-                    <marquee behavior="" direction="" class="fw-bold fs-1" scrollamount="18" >
-                      <div class="col d-flex gap-4 flex-row">
-                        <img src="./img/brands/brand-1.png" class="img-fluid" width="300"  alt="brad" srcset="">
-                        <img src="./img/brands/brand-2.png" class="img-fluid" width="300"  alt="brad" srcset="">
-                        <img src="./img/brands/brand-3.png" class="img-fluid" width="300"  alt="brad" srcset="">
-                        <img src="./img/brands/brand-4.png" class="img-fluid" width="300"  alt="brad" srcset="">
-                        <img src="./img/brands/brand-5.png" class="img-fluid" width="300"  alt="brad" srcset="">
-                        <img src="./img/brands/brand-6.png" class="img-fluid" width="300"  alt="brad" srcset="">
-                        <img src="./img/brands/brand-7.png" class="img-fluid" width="300"  alt="brad" srcset="">
-                        <img src="./img/brands/brand-8.png" class="img-fluid" width="300"  alt="brad" srcset="">
-                        <img src="./img/brands/brand-9.png" class="img-fluid" width="300"  alt="brad" srcset="">
-                      </div>
-                    </marquee>
-                    <div class="d-flex justify-content-center ">
-                      <img src="./img/brands/brand-10.png" class="img-fluid" alt="" srcset="">
-                    </div>
-                    <div class="d-flex justify-content-center px-0">
-                      <img src="./img/brands/brand-11.png" class="img-fluid w-100" alt="" srcset="">
-                    </div>
-                  </div>
+      <!-- Feauture Brands -->
+      <div class="row">
+        <div class="col-md-12 col-sm-12 px-0 pb-5">
+          <div class="container-fluid">
+            <h2 class=" fw-bold fs-1 mb-3">Featured Brands</h2>
+
+            <div class="row">
+              <marquee behavior="scroll" direction="left" class="fw-bold fs-1" scrollamount="18" loop="infinite">
+                <div class="col d-flex gap-4 flex-row">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-05.jpg?v=1699387717"
+                    class="img-fluid" width="250" alt="brad" srcset="">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-15.jpg?v=1699462003"
+                    class="img-fluid" width="250" alt="brad" srcset="">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-14.jpg?v=1699461985"
+                    class="img-fluid" width="250" alt="brad" srcset="">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-09.jpg?v=1699461444"
+                    class="img-fluid" width="250" alt="brad" srcset="">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-04.jpg?v=1699387249"
+                    class="img-fluid" width="250" alt="brad" srcset="">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-16.jpg?v=1699462045"
+                    class="img-fluid" width="250" alt="brad" srcset="">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-13.jpg?v=1699461956"
+                    class="img-fluid" width="250" alt="brad" srcset="">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-03.jpg?v=1699387230"
+                    class="img-fluid" width="250" alt="brad" srcset="">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-17.jpg?v=1699462059"
+                    class="img-fluid" width="250" alt="brad" srcset="">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-06.jpg?v=1699461398"
+                    class="img-fluid" width="250" alt="brad" srcset="">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-18.jpg?v=1699462019"
+                    class="img-fluid" width="250" alt="brad" srcset="">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-11.jpg?v=1699461940"
+                    class="img-fluid" width="250" alt="brad" srcset="">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-07.jpg?v=1699461430"
+                    class="img-fluid" width="250" alt="brad" srcset="">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-19.jpg?v=1699462086"
+                    class="img-fluid" width="250" alt="brad" srcset="">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-10.jpg?v=1699461927"
+                    class="img-fluid" width="250" alt="brad" srcset="">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-08.jpg?v=1699461466"
+                    class="img-fluid" width="250" alt="brad" srcset="">
+                  <img src="https://everythingfor420.com/cdn/shop/files/brands-board-icon-20.jpg?v=1699462110"
+                    class="img-fluid" width="250" alt="brad" srcset="">
                 </div>
+              </marquee>
+              <div class="d-flex justify-content-center ">
+                <img src="./img/brands/brand-10.png" class="img-fluid" alt="" srcset="">
+              </div>
+              <div class="d-flex justify-content-center px-0">
+                <img src="./img/brands/brand-11.png" class="img-fluid w-100" alt="" srcset="">
               </div>
             </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="footer container-fluid pt-5 pb-3">
