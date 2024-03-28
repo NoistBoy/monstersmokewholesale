@@ -1,11 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
   --monster-primary: #76C043;
   --tag-btn: #EBEDEC;
   --monster-primary-hover: #D9FFD9;
   --monster-footer-bg: #17230e;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =======================================================
+              CUSTOM SCROLLBAR STYLING START
+========================================================== */
+/* Hide the browser's default scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Color of the track */
+}
+
+/* Handle (thumb) */
+::-webkit-scrollbar-thumb {
+  /* background: #888; */
+  background: var(--monster-primary);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /* background: #555; */
+  background: #87dd4d;
+}
+
+/* =======================================================
+              CUSTOM SCROLLBAR STYLING END
+========================================================== */
 
 * {
   font-family: "Montserrat", sans-serif;
@@ -809,7 +843,7 @@ ul,
     font-size: 10px;
   }
 
-  .btn-tag-wrapper{
+  .btn-tag-wrapper {
     display: flex;
     justify-content: space-between;
   }
@@ -818,18 +852,20 @@ ul,
     font-size: x-small !important;
   }
 
-  .product-card-stock-detail{
+  .product-card-stock-detail {
     font-size: x-small !important;
     /* color: var(--monster-primary); */
   }
-  .product-card-title{
+
+  .product-card-title {
     font-size: smaller !important;
   }
 
-  .carousel-main-container{
+  .carousel-main-container {
     margin-top: 91px !important;
   }
-  .nav-sochial-icons{
+
+  .nav-sochial-icons {
     padding-left: 1rem !important;
   }
 }
