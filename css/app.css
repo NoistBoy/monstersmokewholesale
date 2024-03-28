@@ -162,6 +162,7 @@ div.content {
   /* Initially hide the toggle button */
 }
 
+
 @media screen and (max-width: 1260px) {
   .sidebar {
     width: 0;
@@ -502,8 +503,11 @@ ul,
 
 .toggle-categories {
   position: absolute;
-  left: 72px;
-  top: 30%;
+  right: 0px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+  color: var(--monster-primary);
   cursor: pointer;
   display: none;
 }
@@ -626,7 +630,7 @@ ul,
     height: 28px;
     width: 35px;
     position: absolute;
-    top: 20px;
+    top: 31px;
     left: 20px;
     z-index: 2;
     display: flex;
@@ -691,8 +695,9 @@ ul,
 
   .logo {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 2.5rem;
   }
 
@@ -723,3 +728,108 @@ ul,
 /* ===================================================== 
       Custom navbar CSS END
    ===================================================== */
+
+/* ===================================================== 
+      drop down list CSS START
+   ===================================================== */
+
+/* Hide dropdowns by default */
+.menu .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 9999;
+}
+
+/* Show dropdowns on hover */
+.menu li:hover .dropdown {
+  display: block;
+}
+
+/* Style dropdown links */
+.menu .dropdown li {
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+.menu .dropdown li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu .dropdown li a:hover {
+  background-color: var(--monster-primary-hover);
+}
+
+/* ===================================================== 
+     drop down list  CSS END
+   ===================================================== */
+
+@media screen and (max-width: 425px) {
+  .logo img {
+    width: 160px;
+  }
+
+  .footer-tag-line {
+    text-align: left !important;
+  }
+
+  .footer-nav {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 13px;
+    word-spacing: 2px;
+  }
+
+  .footer-social {
+    justify-content: space-between;
+  }
+
+  .footer-row {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+
+  .footer-disclamer {
+    font-size: x-small;
+  }
+
+  .container-input {
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 21px;
+  }
+
+  .btn-tag {
+    margin-right: 0px;
+    font-size: 10px;
+  }
+
+  .btn-tag-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-card-btn {
+    font-size: x-small !important;
+  }
+
+  .product-card-stock-detail{
+    font-size: x-small !important;
+    /* color: var(--monster-primary); */
+  }
+  .product-card-title{
+    font-size: smaller !important;
+  }
+
+  .carousel-main-container{
+    margin-top: 91px !important;
+  }
+  .nav-sochial-icons{
+    padding-left: 1rem !important;
+  }
+}
